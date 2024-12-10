@@ -6,7 +6,7 @@ function adicionar() {
     produtoValor = parseFloat(produto.split("R$")[1]);
     produtoNome = produto.split('-')[0];
     console.log(quantidade);
-      if(quantidade <= 0 || isNaN(quantidade.NaN)) {
+      if(quantidade <= 0 || isNaN(quantidade)) {
         alert('Por favor insira uma quantidade válida!');
       } else {
         let somaAdicionar = produtoValor * quantidade;
